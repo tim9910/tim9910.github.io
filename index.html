@@ -4,134 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>資料結構課程｜個人首頁</title>
-  <meta name="description" content="資料結構課程歷程與作業彙整的個人首頁。" />
   <style>
-    :root{
-      --bg:#0f172a;          /* slate-900 */
-      --panel:#111827CC;     /* gray-900/80 */
-      --text:#e5e7eb;        /* gray-200 */
-      --muted:#9ca3af;       /* gray-400 */
-      --accent:#22d3ee;      /* cyan-400 */
-      --accent-2:#a78bfa;    /* violet-400 */
-      --card:#111827;        /* gray-900 */
-      --border:#1f2937;      /* gray-800 */
-    }
-    html,body{height:100%;}
-    body{
-      margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
-      color:var(--text); background:radial-gradient(1200px 600px at 10% -10%, #0ea5e940 0%, transparent 60%),
-                         radial-gradient(900px 500px at 110% 10%, #8b5cf640 0%, transparent 60%),
-                         var(--bg);
-    }
-    .container{max-width:1000px; margin:0 auto; padding:28px 20px 80px;}
-    header{
-      border:1px solid var(--border); background:linear-gradient(180deg, var(--panel), #0b1220CC);
-      backdrop-filter: blur(8px);
-      border-radius:18px; padding:28px; position:relative; overflow:hidden;
-    }
-    .badge{display:inline-block; padding:4px 10px; border-radius:999px; font-size:12px; letter-spacing:.5px; color:#062028; background:linear-gradient(90deg,var(--accent),var(--accent-2)); font-weight:700;}
-    h1{margin:10px 0 6px; font-size: clamp(24px, 4vw, 36px);} 
-    .subtitle{color:var(--muted); margin:0 0 8px; font-size:14px}
-    .grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px}
-    @media(min-width:820px){ .grid{grid-template-columns:1.1fr .9fr;} }
-    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px}
-    .card h2{margin:0 0 10px; font-size:18px}
-    .meta-table{width:100%; border-collapse:collapse;}
-    .meta-table th,.meta-table td{padding:10px 8px; text-align:left; border-bottom:1px dashed var(--border);}
-    .meta-table th{color:var(--muted); font-weight:600; width:120px}
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .list{list-style:none; padding:0; margin:0}
-    .list li{padding:10px 0; border-bottom:1px dashed var(--border)}
-    .list li:last-child{border-bottom:none}
-    .muted{color:var(--muted)}
-    footer{margin-top:26px; color:var(--muted); font-size:13px; text-align:center}
-    .pill{display:inline-flex; gap:8px; align-items:center; font-size:12px; color:var(--muted)}
-    .pill code{background:#0b1220; border:1px solid var(--border); padding:2px 6px; border-radius:8px; color:var(--text)}
-    .kbd{border:1px solid var(--border); padding:2px 6px; border-radius:6px; background:#0b1220}
-    .btn{
-      display:inline-block; border:1px solid var(--border); background:#0b1220; padding:10px 14px; border-radius:12px; font-weight:600
-    }
-    .btn:hover{border-color:#334155}
-    .todo{background:#0b1220; border:1px solid var(--border); padding:10px 12px; border-radius:10px; display:inline-block}
-    .tag{font-size:12px; color:var(--muted); border:1px solid var(--border); padding:2px 8px; border-radius:999px}
+    body { font-family: Arial, "Microsoft JhengHei", sans-serif; margin: 20px; background: #fff; color: #000; }
+    h1 { font-size: 24px; margin-bottom: 10px; }
+    h2 { font-size: 20px; margin-top: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f0f0f0; }
+    ul, ol { margin: 0; padding-left: 20px; }
+    footer { margin-top: 30px; font-size: 12px; color: #555; text-align: center; }
+    a { color: blue; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <span class="badge">資料結構｜Data Structures</span>
-      <h1>個人課程首頁</h1>
-    </header>
+  <h1>資料結構｜個人課程首頁</h1>
+  <p>彙整課程學習歷程與作業連結。</p>
 
-    <section class="grid" aria-label="主要內容">
-      <article class="card" aria-label="個人資訊">
-        <h2>個人資訊</h2>
-        <table class="meta-table">
-          <tr>
-            <th>姓名</th>
-            <td><span class="todo">林晉霆</span></td>
-          </tr>
-          <tr>
-            <th>學號</th>
-            <td><span class="todo">1133322</span></td>
-          </tr>
-          <tr>
-            <th>課程</th>
-            <td>資料結構（Data Structures）</td>
-          </tr>
-          <tr>
-            <th>學期</th>
-            <td><span id="term">1141</span></td>
-          </tr>
-          <tr>
-            <th>網站用途</th>
-            <td>作為資料結構課程的<span class="tag">學習歷程</span>與<span class="tag">作業彙整</span>平台。</td>
-          </tr>
-        </table>
-      </article>
+  <h2>個人資訊</h2>
+  <table>
+    <tr>
+      <th>姓名</th>
+      <td>林晉霆</td>
+    </tr>
+    <tr>
+      <th>學號</th>
+      <td>1133322</td>
+    </tr>
+    <tr>
+      <th>課程</th>
+      <td>資料結構（Data Structures）</td>
+    </tr>
+    <tr>
+      <th>學期</th>
+      <td>1141</td>
+    </tr>
+    <tr>
+      <th>網站用途</th>
+      <td>作為資料結構課程的學習歷程與作業彙整平台。</td>
+    </tr>
+  </table>
 
-      <aside class="card" aria-label="快速導覽">
-        <h2>快速導覽</h2>
-        <ul class="list">
-          <li><a href="#about">關於本網站</a></li>
-          <li><a href="#homeworks">作業清單</a></li>
-        </ul>
-      </aside>
-    </section>
+  <h2>快速導覽</h2>
+  <ul>
+    <li><a href="#about">關於本網站</a></li>
+    <li><a href="#homeworks">作業清單</a></li>
+  </ul>
 
-    <section id="about" class="card" style="margin-top:16px">
-      <h2>關於本網站</h2>
-      <p>
-        這個網站是本人的資料結構課程專屬首頁，用來集中管理課程相關內容。
-      </p>
-    </section>
+  <h2 id="about">關於本網站</h2>
+  <p>這個網站是本人的資料結構課程專屬首頁，用來集中管理課程相關內容。</p>
 
+  <h2 id="homeworks">作業清單</h2>
+  <ol>
+    <li>
+      <strong>HW1：Build Your Own GitHub Repository</strong> —
+      <a href="https://github.com/tim9910/" target="_blank">tim GitHub Repos</a>
+    </li>
+  </ol>
 
-    <section id="homeworks" class="card" style="margin-top:16px">
-      <h2>作業清單</h2>
-      <ol>
-        <li>
-          <strong>HW1：Build Your Own GitHub Repository</strong> —
-          <a href="https://github.com/tim9910/">tim GitHub Repos</a>
-        </li>
-
-      </ol>
-    </section>
-
-
-    <footer>
-      <div>© <span id="year"></span> Data Structures Portfolio. All rights reserved.</div>
-    </footer>
-  </div>
-
-  <script>
-    const y = new Date().getFullYear();
-    document.getElementById('year').textContent = y;
-    const today = new Date();
-    const pad = n => String(n).padStart(2,'0');
-    const stamp = `${today.getFullYear()}-${pad(today.getMonth()+1)}-${pad(today.getDate())}`;
-    document.getElementById('today').textContent = stamp;
-  </script>
 </body>
 </html>
